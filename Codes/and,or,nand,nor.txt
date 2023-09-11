@@ -1,0 +1,8 @@
+vdd vdd 0 DC 5
+Vx x 0 pwl 10n 0 20n 5 50n 5 60n 0 90n 0 100n 5 130n 5 140n 0 170n 0 180n 5 
+Vy y 0 pwl 10n 0 20n 5 100n 5 110n 0 
+cload out 0 250fF 
+.measure tran tf trig v(out) val=4.5 fall=1 td=4ns trag v(out) val=0.5 fall=1
+.measure tran tr trig v(out) val=0.5 rais=1 td=4ns trag v(out) val=4.5 rais=1 
+.tran 200n
+.include C:\Users\adams\Desktop\Summer\IC\Project\C5_models.txt

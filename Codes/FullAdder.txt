@@ -1,0 +1,6 @@
+vdd vdd 0 DC 5
+Vx x 0 DC pwl 10n 0 20n 0 50n 0 80n 0 100n 0 110n 5 140n 5 170n 5 200n 5
+Vy y 0 DC pwl 10n 0 20n 0 40n 0 50n 5 80n 5 100n 5 110n 0 140n 0 160n 0 170n 5 200n 5
+VCin Cin 0 DC pwl 10n 0 20n 5 40n 5 50n 0 70n 0 80n 5 100n 5 110n 0 130n 0 140n 5 160n 5 170n 0 190n 0 200n 5
+.tran 230n
+.include C:\Users\adams\Desktop\Summer\IC\Project\C5_models.txt

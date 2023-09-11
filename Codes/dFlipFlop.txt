@@ -1,0 +1,8 @@
+vdd vdd 0 DC 5
+VD D 0 DC pwl 10ns 5 20ns 5 50ns 5 60ns 0 70ns 0 80ns 5
+Vclk clk 0 DC pwl 10ns 0 20ns 0 30ns 5 40ns 5 50ns 0 60ns 0 70ns 5 80ns 5 90ns 0 
+cload output 0 250fF 
+.measure tran tf trig v(Q) val=4.5 fall=1 td=8ns targ v(Q) val=0.5 fall=1
+.measure tran tf trig v(Q) val=0.5 rise=1 td=50ns targ v(Q) val=4.5 fall=1
+.tran 0 0.1us
+.include C:\Users\adams\Desktop\Summer\IC\Project\C5_models.txt
